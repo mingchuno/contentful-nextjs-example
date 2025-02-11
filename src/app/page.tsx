@@ -17,6 +17,7 @@ export default async function Home() {
             {post.fields.excerpt}
           </p>
           <a
+            // @ts-expect-error FIXME
             href={`/posts/${post.fields.slug}`}
             className="text-blue-600 hover:underline"
           >
